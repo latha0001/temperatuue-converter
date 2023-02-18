@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+form input[type="number"]{
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form select {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+#result{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h1{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+@media (max-width: 600px) {
+    form{
+        flex-direction: column;
+    }
+    form input[type="number"],form select, form button{
+        width: 100%;
+    }
+    button{
+        margin-top: 10px;
+    }
+}
